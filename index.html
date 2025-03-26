@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thiết bị điện tử</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
@@ -15,10 +16,14 @@
                 <button>Về chúng tôi</button>
             </div>
             <div class="searchbox">
-                <form action="/search" method="get">
+                <form action="/search" method="get" id="form">
                     <input type="text" id="search" name="s" placeholder="Tìm kiếm...">
-                    <button class="timkiem" type="submit">Tìm</button>
+                    <button class="submit" type="submit">Tìm</button>
                 </form>
+
+                <button class="search" type="submit">
+                    <p class="fa-solid fa-magnifying-glass"></i>
+                </button>
             </div>
     </header>
     <main>

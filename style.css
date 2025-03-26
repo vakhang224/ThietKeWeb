@@ -1,3 +1,4 @@
+/*Header Tổng*/
 header{
     margin: 10px 50px;
     background-color: #E6E6E6;
@@ -7,15 +8,18 @@ header{
     padding: 10px 20px;
     border-radius: 10px;
 }
+/*Phần bên phải (Icon, Trang chủ, Sản phẩm, Về chúng tôi)*/
 .about{
     display: flex;
     align-items: center;
 }
+/*Logo*/
 .about img{
     width: 70px;
     height: auto;
     margin-right: 20px;
 }
+/*3 nút Trang chủ, Sản phẩm, Về chúng tôi*/
 .about button{
     background-color: #E6E6E6;
     border: none;
@@ -23,14 +27,18 @@ header{
     padding: 10px;
     margin-right: 10px;
 }
+/*Phần tìm kiếm*/
 .searchbox{
     display: flex;
     align-items: center;
 }
+/*Form tìm kiếm*/
 .searchbox form{
     display: flex;
     align-items: center;
 }
+
+
 #search{
     background-image: url('file/searchicon.png');
     background-repeat: no-repeat;
@@ -44,8 +52,9 @@ header{
     outline: none;
     width: 200px;
     max-width: 100%;
+    margin-right:10px
 }
-.searchbox form button{
+.submit{
     background-color: #E6E6E6;
     position: relative;
     border: none;
@@ -55,7 +64,26 @@ header{
 }
 button:hover{
     border-radius: 10px;
-    background-color: #39158F;
+    background-color:#39158F;
     color: white;
 }
 
+.search{
+    display: none;
+}
+
+@media only screen and (max-width: 800px) {
+    #form {
+      display: none;
+    }
+    .search{
+        background-color: #E6E6E6;
+        display: block;
+        border-radius: 10px;
+        border: none;
+        padding: 3px;
+        font-size: 20px;
+        width: 60px;
+    }
+
+}
