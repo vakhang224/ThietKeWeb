@@ -9,18 +9,18 @@ header{
     border-radius: 10px;
 }
 /*Phần bên phải (Icon, Trang chủ, Sản phẩm, Về chúng tôi)*/
-.about{
+.nutdieuhuongheader{
     display: flex;
     align-items: center;
 }
 /*Logo*/
-.about img{
+.nutdieuhuongheader img{
     width: 70px;
     height: auto;
     margin-right: 20px;
 }
 /*3 nút Trang chủ, Sản phẩm, Về chúng tôi*/
-.about button{
+.nutdieuhuongheader button{
     background-color: #E6E6E6;
     border: none;
     font-size: 20px;
@@ -28,18 +28,17 @@ header{
     margin-right: 10px;
 }
 /*Phần tìm kiếm*/
-.searchbox{
+.thanhtimkiem{
     display: flex;
     align-items: center;
 }
 /*Form tìm kiếm*/
-.searchbox form{
+.thanhtimkiem form{
     display: flex;
     align-items: center;
 }
 
-
-#search{
+#searchbar{
     background-image: url('file/searchicon.png');
     background-repeat: no-repeat;
     background-position: right 10px center;
@@ -54,7 +53,7 @@ header{
     max-width: 100%;
     margin-right:10px
 }
-.submit{
+.submitbutton{
     background-color: #E6E6E6;
     position: relative;
     border: none;
@@ -64,19 +63,22 @@ header{
 }
 button:hover{
     border-radius: 10px;
-    background-color:#39158F;
+    background-color:#39158F !important;
     color: white;
 }
 
-.search{
+.nuttimkiem{
     display: none;
 }
+.nutdieuhuongthugon{
+    display:none;
+}
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 770px) {
     #form {
       display: none;
     }
-    .search{
+    .nuttimkiem{
         background-color: #E6E6E6;
         display: block;
         border-radius: 10px;
@@ -86,4 +88,26 @@ button:hover{
         width: 60px;
     }
 
+}
+@media only screen and (max-width: 530px) {
+    #form {
+      display: none;
+    }
+    .nutdieuhuongheader button{
+        display:none;
+    }
+    .nutdieuhuongthugon {
+        display: block;
+        justify-self: center;
+    }
+    .nutdieuhuongthugon button{
+        background-color: #E6E6E6;
+        padding:20px;
+        border-radius: 10px;
+        border: none;
+        justify-self: center;
+    }
+    .about button{
+        display:none;
+    }
 }
