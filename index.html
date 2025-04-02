@@ -5,19 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thiết bị điện tử</title>
     <link rel="stylesheet" href="style.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
             <div class="nutdieuhuongheader">
                 <img src="file/icon.jpg">
-                <button>Trang chủ</button>
-                <button>Sản phẩm</button>
-                <button>Về chúng tôi</button>
+                <form action="index.html">
+                    <button>Trang chủ</button>
+                </form>
+                <form action="product.html">
+                    <button>Sản phẩm</button>
+                </form>
+                <form action="about.html">
+                    <button>Về chúng tôi</button>
+                </form>
             </div>
  
             <div class="thanhtimkiem">
-                <form action="/search" method="get" id="form">
+                <form action="search" method="get" id="form">
                     <input type="text" id="searchbar" name="s" placeholder="Tìm kiếm...">
                     <button class="submitbutton" type="submit">Tìm</button>
                 </form>
@@ -30,14 +36,30 @@
             <div class="nutdieuhuongthugon">
                 <button><i class="fa-solid fa-bars"></i></button>
             </div>
-
     </header>
     <main>
-    <div>
-    </div>
-    <div>
+        <div class="banner">
+            <div style="margin-left: 30px">
+                <p style="font-size: 40px; position: relative;
+                 text-align: left; font-weight: bold;">Giới thiệu sản phẩm</p>
+                <p style="font-size: 20px; position: relative;
+                 text-align: left;">Giới thiệu các loại sản phẩm điện tử trên thị trường.</p>
+            </div>
+            <img src="file/hinhdautrang.jpg">
+        </div>
+        <br>
+        <h1 style="text-align: center;">Sản phẩm mới ra mắt</h1>
+        <div class="slider">
+            <img class="banner-slider" src="file/slider/lap1.jpg">
+            <img class="banner-slider" src="file/slider/lap2.jpg">
+            <img class="banner-slider" src="file/slider/lap3.jpg">
+            <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+        </div>
+
+        <div>
         
-    </div>
+        </div>
     </main>
     <footer>
 
