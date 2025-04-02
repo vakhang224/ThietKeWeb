@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    button img {
+        max-width: 100%; /* Hình ảnh sẽ không vượt quá chiều rộng của nút */
+        max-height: 100%; /* Hình ảnh sẽ không vượt quá chiều cao của nút */
+        height: auto; /* Chiều cao tự động điều chỉnh theo tỷ lệ khung hình */
+      }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Laptop</title>
+</head>
+<body>
+    <header>
+        <div class="nutdieuhuongheader">
+            <img src="../file/icon.jpg">
+            <button>Trang chủ</button>
+            <button>Sản phẩm</button>
+            <button>Về chúng tôi</button>
+        </div>
+
+        <div class="thanhtimkiem">
+            <form action="/search" method="get" id="form">
+                <input type="text" id="searchbar" name="s" placeholder="Tìm kiếm...">
+                <button class="submitbutton" type="submit">Tìm</button>
+            </form>
+
+            <button class="nuttimkiem" type="submit">
+                <p class="fa-solid fa-magnifying-glass"></p>
+            </button>
+        </div>
+
+        <div class="nutdieuhuongthugon">
+            <button><i class="fa-solid fa-bars"></i></button>
+        </div>
+
+    </header>
+    
+    <main>
+        
+    <div class="Danhmuc">
+        <button><i class="fa-solid fa-laptop"></i>Laptop
+        </button>
+        <button><i class="fa-brands fa-apple"></i>Macbook
+        </button>
+        <button><i class="fa-solid fa-mobile"></i>Điện thoại
+        </button>
+        <button><i class="fa-solid fa-tablet"></i>Máy tính bảng
+        </button>
+        <button><i class="fas fa-desktop"></i>Màn hình
+        </button>
+        <button><img src="..//file/pc_icon.jpg" style="width: 30px;" >Máy tính bàn
+        </button>
+        <button><i class="fas fa-headphones-alt"></i>Thiết bị nghe
+        </button>
+        <button><i class="fa-solid fa-gamepad"></i></i>Các thiết bị khác
+        </button>
+    </div>
+
+    <div>
+        
+    </div>
+    </main>
+    <footer>
+
+    </footer>    
+</body>
+<script src="script.js"></script>
+   
+</html>
