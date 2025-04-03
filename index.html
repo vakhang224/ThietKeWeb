@@ -11,7 +11,7 @@
 <body>
     <header>
             <div class="nutdieuhuongheader">
-                <img src="file/icon.jpg">
+                <img src="file/icon.jpg" alt="Website Logo">
                 <form action="index.html">
                     <button>Trang chủ</button>
                 </form>
@@ -24,27 +24,17 @@
             </div>
  
             <div class="thanhtimkiem">
-                <form action="search" method="get" id="form">
+                <form action="#" method="get" id="form">
                     <input type="text" id="searchbar" name="s" placeholder="Tìm kiếm...">
                     <button class="submitbutton" type="submit">Tìm</button>
                 </form>
-
-                <button class="nuttimkiem" type="submit">
-                    <p class="fa-solid fa-magnifying-glass"></p>
-                </button>
-            </div>
-
-            <div class="nutdieuhuongthugon">
-                <button><i class="fa-solid fa-bars"></i></button>
             </div>
     </header>
     <main>
         <div class="banner">
-            <div style="margin-left: 30px">
-                <p style="font-size: 40px; position: relative;
-                 text-align: left; font-weight: bold;">Giới thiệu sản phẩm</p>
-                <p style="font-size: 20px; position: relative;
-                 text-align: left;">Giới thiệu các loại sản phẩm điện tử trên thị trường.</p>
+            <div class="banner-text">
+                <p class="banner-title">Giới thiệu sản phẩm</p>
+                <p class="banner-description">Giới thiệu các loại sản phẩm điện tử trên thị trường.</p>
             </div>
             <img src="file/hinhdautrang.jpg">
         </div>
@@ -60,15 +50,58 @@
                 <button class="button-right" onclick="plusDivs(+1)" style="position: absolute; right: 10%;">&#10095;</button>
             </div>
         </div>
-
-        <div>
-        
+        <br>
+        <br>
+        <div class="item">
+            <a href>
+                <div class="laptop">
+                    <img src="file/item/laptop.png" alt="Laptop">
+                    <p>Laptop</p>
+                </div>
+            </a>
+            <a href>
+                <div class="macbook">
+                    <img src="file/item/macbook.jpg" alt="Macbook">
+                    <p>Macbook</p>
+                </div>
+            </a>
+            <a href>
+                <div class="phone">
+                    <img src="file/item/phone.png" alt="Điện thoại">
+                    <p>Điện thoại</p>
+                </div>
+            </a>
+            <a href>
+                <div class="tablet">
+                    <img src="file/item/tablet.png" alt="Máy tính bảng">
+                    <p>Tablet</p>
+                </div>
+            </a>
+            <a href>
+                <div class="screen">
+                    <img src="file/item/screen.png" alt="Màn hình">
+                    <p>Màn hình</p>
+                </div>
+            </a>
+            <a href>
+                <div class="pc">
+                    <img src="file/item/pc.png" alt="Máy tính bàn">
+                    <p>PC</p>
+                </div>
+            </a>
+            <a href>
+                <div class="audio">
+                    <img src="file/item/audio.png" alt="Thiết bị âm thanh">
+                    <p>Thiết bị âm thanh</p>
+                </div>
+            </a>
         </div>
     </main>
     <footer>
-
+        <!-- Footer content goes here. Add contact information, copyright, or links in the future. -->
+        <p style="text-align: center;">&copy; 2023 Thiết bị điện tử. All rights reserved.</p>
     </footer>    
 </body>
-<script src="script.js"></script>
+<script src="script.js" defer></script>
    
 </html>

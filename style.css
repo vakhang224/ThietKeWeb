@@ -3,117 +3,97 @@ html{
 }
 
 /*Header Tổng*/
-header{
-    margin: 10px 300px;
+header {
+    margin: 10px 20px;
     background-color: #E6E6E6;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
     border-radius: 10px;
-}
-/*Phần bên phải (Icon, Trang chủ, Sản phẩm, Về chúng tôi)*/
-.nutdieuhuongheader{
-    display: flex;
-    align-items: center;
-}
-/*Logo*/
-.nutdieuhuongheader img{
-    width: 70px;
-    height: auto;
-    margin-right: 20px;
-}
-/*3 nút Trang chủ, Sản phẩm, Về chúng tôi*/
-.nutdieuhuongheader button{
-    background-color: #E6E6E6;
-    border: none;
-    font-size: 20px;
-    padding: 10px;
-    margin-right: 10px;
-}
-/*Phần tìm kiếm*/
-.thanhtimkiem{
-    display: flex;
-    align-items: center;
-}
-/*Form tìm kiếm*/
-.thanhtimkiem form{
-    display: flex;
-    align-items: center;
+    flex-wrap: wrap; /* Cho phép các phần tử xuống dòng trên màn hình nhỏ */
 }
 
-#searchbar{
+/*Phần bên phải (Icon, Trang chủ, Sản phẩm, Về chúng tôi)*/
+.nutdieuhuongheader {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;`   
+    margin-right:10%; /* Cho phép các phần tử xuống dòng trên màn hình nhỏ */
+}
+
+/*Logo*/
+.nutdieuhuongheader img {
+    width: 50px; /* Điều chỉnh kích thước cho màn hình nhỏ */
+    height: auto;
+    margin-right: 10px;
+}
+
+/*3 nút Trang chủ, Sản phẩm, Về chúng tôi*/
+.nutdieuhuongheader button {
+    background-color: #E6E6E6;
+    border: none;
+    font-size: 16px; /* Điều chỉnh kích thước cho màn hình nhỏ */
+    padding: 8px;
+    margin-right: 5px;
+}
+
+/*Phần tìm kiếm*/
+.thanhtimkiem {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; /* Cho phép các phần tử xuống dòng trên màn hình nhỏ */
+    gap: 10px; /* Thêm khoảng cách giữa các phần tử */
+}
+
+/*Form tìm kiếm*/
+.thanhtimkiem form {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; /* Cho phép các phần tử xuống dòng trên màn hình nhỏ */
+}
+
+#searchbar {
     background-image: url('file/searchicon.png');
     background-repeat: no-repeat;
     background-position: right 10px center;
-    background-size: 25px;
+    background-size: 20px; /* Điều chỉnh kích thước cho màn hình nhỏ */
     position: relative;
     border-radius: 10px;
-    top:-1px;
-    padding: 15px;
+    top: -1px;
+    padding: 10px; /* Điều chỉnh kích thước cho màn hình nhỏ */
     border: none;
     outline: none;
-    width: 200px;
+    width: 150px; /* Điều chỉnh kích thước cho màn hình nhỏ */
     max-width: 100%;
-    margin-right:10px;
+    margin-right: 5px;
 }
-.submitbutton{
+
+.submitbutton {
     background-color: #E6E6E6;
     position: relative;
     border: none;
-    padding: 10px;
-    font-size: 20px;
+    padding: 8px; /* Điều chỉnh kích thước cho màn hình nhỏ */
+    font-size: 16px; /* Điều chỉnh kích thước cho màn hình nhỏ */
     bottom: 1px;
 }
-header button:hover{
+
+header button:hover {
     border-radius: 10px;
     background-color: #39158F;
     color: white;
 }
 
-.nuttimkiem{
-    display: none;
-}
-.nutdieuhuongthugon{
-    display:none;
-}
-
-/* Hide #form in responsive views */
-@media only screen and (max-width: 770px), only screen and (max-width: 530px) {
-    #form {
-        display: none;
-    }
-}
-
-@media only screen and (max-width: 770px) {
-    .nuttimkiem{
-        background-color: #E6E6E6;
-        display: block;
-        border-radius: 10px;
-        border: none;
-        padding: 3px;
-        font-size: 20px;
-        width: 60px;
-    }
-}
-
+/* Điều chỉnh giao diện trên màn hình nhỏ */
 @media only screen and (max-width: 530px) {
-    .nutdieuhuongheader button{
-        display:none;
+    .nutdieuhuongheader {
+        width: 100%; /* Đảm bảo chiếm toàn bộ chiều rộng */
+        margin: 5px 0;
     }
-    .nutdieuhuongthugon {
-        display: block;
-        justify-self: center;
-    }
-    .nutdieuhuongthugon button{
-        background-color: #E6E6E6;
-        padding:20px;
-        border-radius: 10px;
-        border: none;
-        justify-self: center;
-    }
-    .about button{
-        display:none;
+
+    .thanhtimkiem {
+        justify-content: center; /* Căn giữa thanh tìm kiếm */
+        width: 100%; /* Đảm bảo chiếm toàn bộ chiều rộng */
     }
 }
 .banner{
@@ -128,40 +108,82 @@ header button:hover{
     align-items: center;
 }
 .banner img{
-    height:400px;
+    width:85%;
+    align-items: center;
     justify-self: center;
     border-radius: 20px;
+    flex-wrap: wrap;
+    margin-left:70px;
 }
 .banner-slider-img {
     justify-self: center;
-    width: 1000px;
+    width: 100%;
+    height: auto;
+    max-height: 550px; /* Giới hạn chiều cao tối đa */
 }
 .slider{
-    max-width: 980px;
+    /* Đảm bảo slider chiếm một nửa chiều rộng container để bố cục cân đối */
+    width:50%;
+    height: 95%;
     position: relative;
     text-align: center;
+
 }
 .button-left{
     position:absolute;
     top:0%;
     left:0%;
-    width: 30%;
-    margin-left: -11.5%; /* Reduced margin to keep button visible */
+    margin-left: -10%;
+    width: 10%; /* Điều chỉnh chiều rộng để dễ nhìn hơn */
     background: linear-gradient(90deg, rgb(104, 104, 104) 0%, rgba(148,187,233,0) 100%);
     height: 100%;
     border: none;
     color: white;
     font-size:2rem;
+    cursor: pointer;
+    z-index: 10; /* Đảm bảo nút nằm trên các phần tử khác */
 }
 .button-right{
     position:absolute;
     top:0%;
     right:0%;
-    width: 30%;
-    margin-right: -11.5%; /* Reduced margin to keep button visible */
+    margin-right:-10%;
+    width: 10%; /* Điều chỉnh chiều rộng để dễ nhìn hơn */
     background: linear-gradient(270deg, rgb(104, 104, 104) 0%, rgba(148,187,233,0) 100%);
     height: 100%;
     border: none;
     color: white;
     font-size:2rem;
+    cursor: pointer;
+    z-index: 10; /* Đảm bảo nút nằm trên các phần tử khác */
+}
+.item{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top:20px;
+}
+.item div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+.item a {
+    text-decoration: none; /* Loại bỏ gạch chân */
+    color: black; /* Giữ nguyên màu chữ từ phần tử cha */
+    text-align: center;
+}
+
+.item img {
+    max-width:80%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+.item div:hover img{
+    transform: scale(1.05);
 }
