@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thiết bị điện tử</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -49,12 +50,15 @@
         </div>
         <br>
         <h1 style="text-align: center;">Sản phẩm mới ra mắt</h1>
-        <div class="slider">
-            <img class="banner-slider" src="file/slider/lap1.jpg">
-            <img class="banner-slider" src="file/slider/lap2.jpg">
-            <img class="banner-slider" src="file/slider/lap3.jpg">
-            <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-            <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+        <br>
+        <div style="text-align: center;">
+            <div class="slider" style="position: relative; display: inline-block;">
+                <img class="banner-slider-img" src="file/slider/lap1.jpg">
+                <img class="banner-slider-img" src="file/slider/lap2.jpg">
+                <img class="banner-slider-img" src="file/slider/lap3.jpg">
+                <button class="button-left" onclick="plusDivs(-1)" style="position: absolute; left: 10%;">&#10094;</button>
+                <button class="button-right" onclick="plusDivs(+1)" style="position: absolute; right: 10%;">&#10095;</button>
+            </div>
         </div>
 
         <div>

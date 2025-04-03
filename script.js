@@ -1,3 +1,4 @@
+/* Slider Button Function */
 var slideIndex = 1;
 showDivs(slideIndex);
 
@@ -7,7 +8,7 @@ function plusDivs(n){
 
 function showDivs(n){
     var i;
-    var x = document.getElementsByClassName("banner-slider");
+    var x = document.getElementsByClassName("banner-slider-img");
     if (n > x.length) {
         slideIndex = 1;
     }
