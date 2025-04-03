@@ -18,7 +18,7 @@ header {
 .nutdieuhuongheader {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;`   
+    flex-wrap: wrap;
     margin-right:10%; /* Cho phép các phần tử xuống dòng trên màn hình nhỏ */
 }
 
