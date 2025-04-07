@@ -1,3 +1,5 @@
+
+
 html{
     font-family: "Roboto", sans-serif;
     background-color: #F8F8FC;
@@ -98,8 +100,17 @@ header button:hover {
     align-items: center;
     box-shadow: 3px 3px 5px rgba(51, 51, 51, 0.5);
 }
+.banner p{
+    font-size: 2rem;
+    margin-left: 70px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+}
 .banner img{
+    position:relative;
     width:85%;
+    bottom:-10%;
     align-items: center;
     justify-self: center;
     border-radius: 20px;
@@ -109,13 +120,14 @@ header button:hover {
 .banner-slider-box{
     background-color: white;
     padding: 40px;
-    margin: auto 10%;
+    margin: auto 15%;
     border-radius: 10px;
     box-shadow: 3px 3px 5px rgba(51, 51, 51, 0.5);
 }
 .banner-slider-img {
     justify-self: center;
     width: 100%;
+    max-width: 100%; /* Prevents the image from stretching beyond its container */
     height: 500px;
 
 }
@@ -204,4 +216,25 @@ footer{
     margin:auto 30%;
     padding: 10px 3%;
     border-radius: 10px;
+}
+a{
+    text-decoration: none; /* Loại bỏ gạch chân */
+    color: black; /* Giữ nguyên màu chữ từ phần tử cha */
+}
+.about-body{
+    background-color: blue;
+    padding:2%;
+    width: 70%;
+    justify-self: center;
+    background-image: linear-gradient(110deg, rgba(205,209,255,1) 0%, rgba(201,231,250,1) 48%, rgba(183,255,243,1) 100%);
+    border-radius: 10px;
+}
+.product-list {
+    padding: 3%;
+    padding-top: 5px;
+    width: 70%;
+    justify-self: center;
+    justify-items: center;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgba(51, 51, 51, 0.5);
 }
