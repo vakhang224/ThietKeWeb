@@ -3,9 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Thiết bị điện tử</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <h1>Đây là trang Về chúng tôi</h1>
+    <header>
+            <div class="nutdieuhuongheader">
+                <img src="file/icon.jpg" alt="Website Logo">
+                <form action="index.html">
+                    <button>Trang chủ</button>
+                </form>
+                <button onclick="transferscroll()">Sản phẩm</button>
+                <form action="about.html">
+                    <button>Về chúng tôi</button>
+                </form>
+            </div>
+ 
+            <div class="thanhtimkiem">
+                <form action="#" method="get" id="form">
+                    <input type="text" id="searchbar" name="s" placeholder="Tìm kiếm...">
+                    <button class="submitbutton" type="submit">Tìm</button>
+                </form>
+            </div>
+    </header>
+    <main>
+        <div class="about-body">
+            <section class="about-intro">
+                <h1>Về Chúng Tôi</h1>
+                <p>Chào mừng bạn đến với <strong>Thiết bị điện tử</strong> – nơi cung cấp các sản phẩm công nghệ hiện đại và chất lượng nhất. Chúng tôi tự hào là một trong những đơn vị hàng đầu trong lĩnh vực thiết bị điện tử, mang đến cho khách hàng những sản phẩm tốt nhất với giá cả hợp lý.</p>
+            </section>
+            <section class="about-mission">
+                <h2>Sứ Mệnh Của Chúng Tôi</h2>
+                <p>Sứ mệnh của chúng tôi là kết nối mọi người với công nghệ tiên tiến, giúp cuộc sống trở nên tiện lợi và hiệu quả hơn. Chúng tôi cam kết mang đến những sản phẩm chất lượng cao, dịch vụ tận tâm và trải nghiệm mua sắm tuyệt vời.</p>
+            </section>
+            <section class="about-values">
+                <h2>Giá Trị Cốt Lõi</h2>
+                <ul>
+                    <li><strong>Chất lượng:</strong> Đảm bảo sản phẩm đạt tiêu chuẩn cao nhất.</li>
+                    <li><strong>Đổi mới:</strong> Luôn cập nhật các công nghệ mới nhất.</li>
+                    <li><strong>Khách hàng là trung tâm:</strong> Đặt lợi ích của khách hàng lên hàng đầu.</li>
+                    <li><strong>Đội ngũ chuyên nghiệp:</strong> Đội ngũ nhân viên tận tâm và giàu kinh nghiệm.</li>
+                </ul>
+            </section>
+            <section class="about-team">
+                <h2>Đội Ngũ Của Chúng Tôi</h2>
+                <p>Chúng tôi tự hào sở hữu một đội ngũ chuyên gia giàu kinh nghiệm và đam mê công nghệ. Đội ngũ của chúng tôi luôn sẵn sàng hỗ trợ và tư vấn để bạn có thể tìm được sản phẩm phù hợp nhất với nhu cầu của mình.</p>
+            </section>
+        </div>
+    </main>
+    <br>
+    <footer>
+        <p style="text-align: center; font-weight: bold;">Thông tin liên lạc</p>
+        <br>
+        <div class="footer-content" style="display: flex; justify-content: space-between;">
+            <div style=
+            "
+            display: flex; 
+            flex-direction: column; 
+            align-items: left; 
+            justify-content: center;
+            ">
+            <a href="https://www.facebook.com/">
+                <i class="fa-brands fa-facebook">   Facebook</i>
+            </a>
+            <br>
+            <a href="https://mail.google.com/">
+                <i class="fa-solid fa-envelope">   Gmail</i>
+            </a>
+            </div>
+            <div style="
+            flex: 1; 
+            text-align: right;
+            ">
+            <p>Demo báo cáo</p>
+            <p>Nội dung chỉ dùng để thực hiện báo cáo cuối kì</p>
+            </div>
+        </div>
+        <br>
+        <p style="text-align: center;">&copy; 2025 Thiết bị điện tử. All rights reserved.</p>
+    </footer>
 </body>
+<script src="script.js" defer></script>
+   
 </html>

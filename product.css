@@ -1,0 +1,37 @@
+
+.product-container p{
+    justify-self: center;
+    flex-wrap: wrap;
+}
+
+.product-container{
+    box-shadow: 3px 3px 5px rgba(51, 51, 51, 0.5);
+    background-color: #FFFFFF;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    justify-items: center;
+    align-items: center;
+    padding:20px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.product-container div{
+    justify-items: center;
+}
+.product-container img{
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+.product-container img:hover{
+    transform: scale(1.05); /* Tăng kích thước hình ảnh khi hover */
+}
+.product-container div:hover {
+    color: #39158F; /* Chuyển chữ sang màu xanh dương khi hover */
+}
+.product-list{
+    background-image: linear-gradient(110deg, rgba(205,209,255,1) 0%, rgba(201,231,250,1) 48%, rgba(183,255,243,1) 100%);
+}
