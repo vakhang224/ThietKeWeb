@@ -7,6 +7,31 @@
         max-height: 100%; /* Hình ảnh sẽ không vượt quá chiều cao của nút */
         height: auto; /* Chiều cao tự động điều chỉnh theo tỷ lệ khung hình */
       }
+
+      .Danhmuc {
+    display: flex; /* Sử dụng flexbox để căn chỉnh các button */
+    flex-wrap: wrap; /* Cho phép các button xuống dòng khi không đủ chỗ */
+    justify-content: flex-start; /* Căn chỉnh các button từ trái sang phải */
+}
+
+.Danhmuc button {
+    display: flex; /* Sử dụng flexbox cho nội dung bên trong button */
+    flex-direction: column; /* Sắp xếp icon và text theo cột */
+    align-items: center; /* Căn giữa nội dung theo chiều ngang */
+    justify-content: center; /* Căn giữa nội dung theo chiều dọc */
+    padding: 10px 15px; /* Thêm padding để tạo khoảng trống xung quanh nội dung */
+    margin: 5px; /* Thêm margin để tạo khoảng trống giữa các button */
+    border: 1px solid #ccc; /* Thêm border để dễ nhìn */
+    background-color: #f0f0f0; /* Màu nền cho button */
+    cursor: pointer; /* Hiển thị con trỏ tay khi hover */
+    min-width: 120px; /* Đặt chiều rộng tối thiểu để các button bằng nhau */
+    box-sizing: border-box; /* Bao gồm padding và border vào chiều rộng và chiều cao */
+}
+
+.Danhmuc button i, .Danhmuc button img {
+    font-size: 24px; /* Kích thước icon */
+    margin-bottom: 5px; /* Khoảng cách giữa icon và text */
+}
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -53,7 +78,8 @@
         </button>
         <button><i class="fas fa-desktop"></i>Màn hình
         </button>
-        <button><img src="..//file/pc_icon.jpg" style="width: 30px;" >Máy tính bàn
+        <button><img src="../file/pc_icon.jpg" style="max-width: 30px; max-height: 30px; height: auto; margin-bottom: 5px; display: block;">Máy tính bàn
+        </button>
         </button>
         <button><i class="fas fa-headphones-alt"></i>Thiết bị nghe
         </button>
