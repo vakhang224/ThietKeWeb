@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Chi tiết sản phẩm</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="product-detail.css">
+</head>
+<body>
+    <header>
+        <div class="nutdieuhuongheader">
+            <img src="file/icon.jpg" alt="Website Logo">
+            <form action="index.html">
+                <button>Trang chủ</button>
+            </form>
+            <button type="button" onclick="scrollonclick()">Sản phẩm</button>
+            <form action="about.html">
+                <button>Về chúng tôi</button>
+            </form>
+        </div>
+
+        <div class="thanhtimkiem">
+            <form action="#" method="get" id="form">
+                <input type="text" id="searchbar" name="s" placeholder="Tìm kiếm...">
+                <button class="submitbutton" type="submit">Tìm</button>
+            </form>
+        </div>
+</header>
+
+    <main class="product-detail-page">
+        <div class="product-image-gallery">
+            <img id="mainImage" class="main-image" src="" alt="Ảnh sản phẩm">
+            <div class="thumbnail-gallery" id="thumbnails">
+                <!-- Ảnh nhỏ sẽ được chèn bằng JS -->
+            </div>
+        </div>
+        <div class="product-details">
+            <h1 id="productName">Tên sản phẩm</h1>
+            <ul id="specList" class="specifications">
+                <!-- Thông số sẽ được chèn bằng JS -->
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <p style="text-align: center; font-weight: bold;">Thông tin liên lạc</p>
+        <br>
+        <div class="footer-content" style="display: flex; justify-content: space-between;">
+            <div style="display: flex; flex-direction: column; align-items: left; justify-content: center;">
+                <a href="https://www.facebook.com/">
+                    <i class="fa-brands fa-facebook">  Facebook</i>
+                </a>
+                <br>
+                <a href="https://mail.google.com/">
+                    <i class="fa-solid fa-envelope">  Gmail</i>
+                </a>
+            </div>
+            <div style="flex: 1; text-align: right;">
+                <p>Demo báo cáo</p>
+                <p>Nội dung chỉ dùng để thực hiện báo cáo cuối kì</p>
+            </div>
+        </div>
+        <br>
+        <p style="text-align: center;">&copy; 2025 Thiết bị điện tử. All rights reserved.</p>
+    </footer>
+
+    <script src="product-data.js"></script>
+
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const productId = urlParams.get('id');
+
+      const product = products[productId];
+      if (!product) {
+        document.body.innerHTML = "<h1 style='text-align:center;'>Sản phẩm không tồn tại!</h1>";
+      } else {
+        document.getElementById("productName").textContent = product.name;
+
+        const specList = document.getElementById("specList");
+        specList.innerHTML = product.specs.map(spec => `<li>- ${spec}</li>`).join('');
+
+        const mainImage = document.getElementById("mainImage");
+        mainImage.src = product.images[0];
+
+        const thumbnails = document.getElementById("thumbnails");
+        thumbnails.innerHTML = product.images.slice(1).map(img => `<img src="${img}" alt="Thumbnail">`).join('');
+
+        // Thêm sự kiện click để đổi ảnh chính khi click thumbnail
+        thumbnails.querySelectorAll("img").forEach(thumbnail => {
+            thumbnail.addEventListener("click", () => {
+                mainImage.src = thumbnail.src;
+            });
+        });
+      }
+    </script>
+</body>
+</html>
