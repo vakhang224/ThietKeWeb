@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thiết bị điện tử</title>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -15,9 +14,7 @@
                 <form action="index.html">
                     <button>Trang chủ</button>
                 </form>
-                <form action="product.html">
-                    <button>Sản phẩm</button>
-                </form>
+                <button type="button" onclick="scrollonclick()">Sản phẩm</button>
                 <form action="about.html">
                     <button>Về chúng tôi</button>
                 </form>
@@ -33,8 +30,8 @@
     <main>
         <div class="banner">
             <div class="banner-text">
-                <p class="banner-title">Giới thiệu sản phẩm</p>
-                <p class="banner-description">Giới thiệu các loại sản phẩm điện tử trên thị trường.</p>
+                <p class="banner-title" style="font-size:30px; font-weight: bold;">Giới thiệu sản phẩm</p>
+                <p class="banner-description" >Giới thiệu các loại sản phẩm điện tử trên thị trường.</p>
             </div>
             <img src="file/laptop-banner.png">
         </div>
@@ -52,43 +49,37 @@
         </div>
         <br>
         <div class="item">
-            <a href>
+            <a href="laptop.html">
                 <div class="laptop">
                     <img src="file/item/laptop.png" alt="Laptop">
                     <p>Laptop</p>
                 </div>
             </a>
-            <a href>
+            <a href="macbook.html">
                 <div class="macbook">
                     <img src="file/item/macbook.jpg" alt="Macbook">
                     <p>Macbook</p>
                 </div>
             </a>
-            <a href>
+            <a href="phone.html">
                 <div class="phone">
                     <img src="file/item/phone.png" alt="Điện thoại">
                     <p>Điện thoại</p>
                 </div>
             </a>
-            <a href>
+            <a href="tablet.html">
                 <div class="tablet">
                     <img src="file/item/tablet.png" alt="Máy tính bảng">
                     <p>Tablet</p>
                 </div>
             </a>
-            <a href>
+            <a href="screen.html">
                 <div class="screen">
                     <img src="file/item/screen.png" alt="Màn hình">
                     <p>Màn hình</p>
                 </div>
             </a>
-            <a href>
-                <div class="pc">
-                    <img src="file/item/pc.png" alt="Máy tính bàn">
-                    <p>PC</p>
-                </div>
-            </a>
-            <a href>
+            <a href="audio.html">
                 <div class="audio">
                     <img src="file/item/audio.png" alt="Thiết bị âm thanh">
                     <p>Thiết bị âm thanh</p>
