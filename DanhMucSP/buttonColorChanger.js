@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", () => {
     // Lấy trạng thái nút được lưu trong localStorage
     const activeButton = localStorage.getItem("activeButton");
 
-    // Nếu có nút được lưu, thêm lớp 'active' vào nút đó
     if (activeButton) {
         const button = document.querySelector(`.Danhmuc button[data-id="${activeButton}"]`);
         if (button) {
@@ -12,10 +11,8 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    // Lấy URL hiện tại
     const currentPage = window.location.pathname.split("/").pop();
 
-    // Thêm lớp 'active' vào nút tương ứng với trang hiện tại
     buttons.forEach((button) => {
         const buttonLink = button.closest("a")?.getAttribute("href");
         if (buttonLink && buttonLink === currentPage) {
