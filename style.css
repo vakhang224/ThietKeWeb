@@ -100,13 +100,22 @@ header button:hover {
     align-items: center;
     box-shadow: 3px 3px 5px rgba(51, 51, 51, 0.5);
 }
-.banner p{
-    font-size: 2rem;
-    margin-left: 70px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    text-align: center;
+.banner-title {
+    font-size: 50px; /* Kích thước chữ lớn hơn */
+    font-weight: bold; /* Chữ đậm */
+    color: #1a1a3d; /* Màu chữ xanh đậm */
+    text-align: center; /* Canh giữa */
+    font-family: 'Arial', sans-serif; /* Kiểu chữ đơn giản */
 }
+
+.banner-description {
+    font-size: 20px; /* Kích thước chữ nhỏ hơn */
+    color: #5a5a89; /* Màu chữ xám nhạt */
+    text-align: center; /* Canh giữa */
+    font-family: 'Arial', sans-serif; /* Kiểu chữ đơn giản */
+    margin-top: 10px; /* Khoảng cách trên */
+}
+
 .banner img{
     position:relative;
     width:85%;
