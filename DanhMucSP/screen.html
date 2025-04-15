@@ -4,33 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thiết bị điện tử</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="style_DM.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../product.css">
+    <script src="buttonColorChanger.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
-            <div class="nutdieuhuongheader">
-                <img src="file/icon.jpg" alt="Website Logo">
-                <form action="index.html">
-                    <button>Trang chủ</button>
-                </form>
-                <form action="product.html">
-                    <button>Sản phẩm</button>
-                </form>
-                <form action="about.html">
-                    <button>Về chúng tôi</button>
-                </form>
-            </div>
- 
-            <div class="thanhtimkiem">
-                <form action="#" method="get" id="form">
-                    <input type="text" id="searchbar" name="s" placeholder="Tìm kiếm...">
-                    <button class="submitbutton" type="submit">Tìm</button>
-                </form>
-            </div>
+        <div class="nutdieuhuongheader">
+            <img src="../file/icon.jpg" alt="Website Logo">
+            <form action="../index.html">
+                <button>Trang chủ</button>
+            </form>
+            <button type="button" onclick="scrollonclick()">Sản phẩm</button>
+            <form action="../about.html">
+                <button>Về chúng tôi</button>
+            </form>
+        </div>
+    
+        <div class="thanhtimkiem">
+            <form action="#" method="get" id="form">
+                <input type="text" id="searchbar" name="s" placeholder="Tìm kiếm...">
+                <button class="submitbutton" type="submit">Tìm</button>
+            </form>
+        </div>
     </header>
     <main>
+        <div class="Danhmuc">
+            <a href="Laptop.html"><button><i class="fa-solid fa-laptop"></i>Laptop</button></a>
+            <a href="macbook.html"><button><i class="fa-brands fa-apple"></i>Macbook</button></a>
+            <a href="phone.html"><button><i class="fa-solid fa-mobile"></i>Điện thoại</button></a>
+            <a href="tablet.html"><button><i class="fa-solid fa-tablet"></i>Tablet</button></a>
+            <a href="screen.html"><button><i class="fas fa-desktop"></i>Màn hình</button></a>
+            <button>
+                <img src="../file/pc_icon.jpg" style="max-width: 30px; max-height: 30px; height: auto; margin-bottom: 5px; display: block;">Máy tính bàn
+            </button>
+            <a href="audio.html"><button><i class="fas fa-headphones-alt"></i>Thiết bị nghe</button></a>
+            <button><i class="fa-solid fa-gamepad"></i>Các thiết bị khác</button>
+        </div>
         <div class="product-list">
 
             <h1>Asus Screen</h1>
@@ -39,42 +51,42 @@
             
                 <a href>
                     <div class="screen">
-                        <img src="file/product/screen/lcd-asus-27-inch-vg279qe5a.png" alt="Màn hình">
+                        <img src="../file/product/screen/lcd-asus-27-inch-vg279qe5a.png" alt="Màn hình">
                         <p>LCD Asus VG279QE5A</p>
                     </div>
                 </a>
 
                 <a href>
                     <div class="screen">
-                        <img src="file/product/screen/asus-proart-pa278qev.png" alt="Màn hình">
+                        <img src="../file/product/screen/asus-proart-pa278qev.png" alt="Màn hình">
                         <p>ASUS ProArt PA278QEV</p>
                     </div>
                 </a>
 
                 <a href>
                     <div class="screen">
-                        <img src="file/product/screen/asus-vy249hgr.png" alt="Màn hình">
+                        <img src="../file/product/screen/asus-vy249hgr.png" alt="Màn hình">
                         <p>ASUS VY249HGR</p>
                     </div>
                 </a>
 
                 <a href>
                     <div class="screen">
-                        <img src="file/product/screen/asus-va27ehf.png" alt="Màn hình">
+                        <img src="../file/product/screen/asus-va27ehf.png" alt="Màn hình">
                         <p>ASUS VA27EHF</p>
                     </div>
                 </a>
 
                 <a href>
                     <div class="screen">
-                        <img src="file/product/screen/asus-rog-strix-xg27ucs.png" alt="Màn hình">
+                        <img src="../file/product/screen/asus-rog-strix-xg27ucs.png" alt="Màn hình">
                         <p>ASUS ROG Strix XG27UCS</p>
                     </div>
                 </a>
 
                 <a href>
                     <div class="screen">
-                        <img src="file/product/screen/asus-rog-strix-xg259qn.png" alt="Màn hình">
+                        <img src="../file/product/screen/asus-rog-strix-xg259qn.png" alt="Màn hình">
                         <p>ASUS ROG Strix XG259QN</p>
                     </div>
                 </a>
@@ -87,46 +99,45 @@
 
                 <a href>
                     <div class="screen">
-                        <img src="file/product/screen/philips-27e1n1100a.png" alt="Màn hình">
+                        <img src="../file/product/screen/philips-27e1n1100a.png" alt="Màn hình">
                         <p>Philips 27E1N1100A</p>
                     </div>
                 </a>
 
                 <a href>
                     <div class="screen">
-                        <img src="file/product/screen/philips-23-8-inch-24e2n1100.png" alt="Màn hình">
+                        <img src="../file/product/screen/philips-23-8-inch-24e2n1100.png" alt="Màn hình">
                         <p>Philips 24E2N1100</p>
                     </div>
                 </a>
 
                 <a href>
                     <div class="screen">
-                        <img src="file/product/screen/philips-241s9.png" alt="Màn hình">
+                        <img src="../file/product/screen/philips-241s9.png" alt="Màn hình">
                         <p>Philips 241S9</p>
                     </div>
                 </a>
 
                 <a href>
                     <div class="screen">
-                        <img src="file/product/screen/lcd-philips-23-8-243v5qhsba.png" alt="Màn hình">
+                        <img src="../file/product/screen/lcd-philips-23-8-243v5qhsba.png" alt="Màn hình">
                         <p>Philip 243V5QHSBA</p>
                     </div>
                 </a>
 
                 <a href>
                     <div class="screen">
-                        <img src="file/product/screen/lcd-philips-23-8-24m1n3200za.png" alt="Màn hình">
+                        <img src="../file/product/screen/lcd-philips-23-8-24m1n3200za.png" alt="Màn hình">
                         <p>Philips 24M1N3200ZA</p>
                     </div>
                 </a>
 
                 <a href>
                     <div class="screen">
-                        <img src="file/product/screen/philips-241v8l6.png" alt="Màn hình">
+                        <img src="../file/product/screen/philips-241v8l6.png" alt="Màn hình">
                         <p>Philips 241V8L6</p>
                     </div>
-                </a>
-            
+                
             </div>
 
             <h1>Samsung Screen</h1>
@@ -135,42 +146,42 @@
             
                 <a href>
                     <div class="screen">
-                        <img src="file/product/screen/samsung-ls34dg850sexxv.png" alt="Màn hình">
+                        <img src="../file/product/screen/samsung-ls34dg850sexxv.png" alt="Màn hình">
                         <p>SAMSUNG LS34DG850SEXXV</p>
                     </div>
                 </a>
 
                 <a href>
                     <div class="screen">
-                        <img src="file/product/screen/samsung-ls22d300gaexxv.png" alt="Màn hình">
+                        <img src="../file/product/screen/samsung-ls22d300gaexxv.png" alt="Màn hình">
                         <p>SAMSUNG LS22D300GAEXXV</p>
                     </div>
                 </a>
 
                 <a href>
                     <div class="screen">
-                        <img src="file/product/screen/samsung-odyssey-g5-g50d-ls32dg502eexxv.png" alt="Màn hình">
+                        <img src="../file/product/screen/samsung-odyssey-g5-g50d-ls32dg502eexxv.png" alt="Màn hình">
                         <p>Samsung Odyssey G5 G50D</p>
                     </div>
                 </a>
 
                 <a href>
                     <div class="screen">
-                        <img src="file/product/screen/samsung-27-ls27c900paexxv.png" alt="Màn hình">
+                        <img src="../file/product/screen/samsung-27-ls27c900paexxv.png" alt="Màn hình">
                         <p>Samsung LS27C900PAEXXV</p>
                     </div>
                 </a>
 
                 <a href>
                     <div class="screen">
-                        <img src="file/product/screen/samsung-m7-m70d.png" alt="Màn hình">
+                        <img src="../file/product/screen/samsung-m7-m70d.png" alt="Màn hình">
                         <p>Samsung M7 M70D</p>
                     </div>
                 </a>
                 
                 <a href>
                     <div class="screen">
-                        <img src="file/product/screen/samsung-ls32bm801uexxv.png" alt="Màn hình">
+                        <img src="../file/product/screen/samsung-ls32bm801uexxv.png" alt="Màn hình">
                         <p>Samsung LS32BM801UEXXV</p>
                     </div>
                 </a>

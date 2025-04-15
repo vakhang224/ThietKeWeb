@@ -1,0 +1,53 @@
+.Danhmuc img {
+    max-width: 100%; /* Hình ảnh sẽ không vượt quá chiều rộng của nút */
+    max-height: 100%; /* Hình ảnh sẽ không vượt quá chiều cao của nút */
+    height: auto; /* Chiều cao tự động điều chỉnh theo tỷ lệ khung hình */
+}
+
+.Danhmuc {
+    display: flex; /* Sử dụng flexbox để căn chỉnh các button */
+    flex-wrap: nowrap; /* Không cho phép các button xuống dòng */
+    justify-content: center; /* Căn giữa các button theo chiều ngang */
+    align-items: center; /* Căn giữa các button theo chiều dọc */
+    padding: 10px; /* Giảm padding để khung sát hơn với các nút */
+    margin: 20px auto; /* Căn giữa khung theo chiều ngang */
+    border: 2px solid #ccc; /* Đường viền cho khung */
+    border-radius: 10px; /* Bo tròn các góc của khung */
+    background-color: #ffffff; /* Màu nền cho khung */
+    max-width: fit-content; /* Đặt chiều rộng khung vừa đủ với nội dung */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Thêm hiệu ứng đổ bóng */
+    overflow-x: auto; /* Thêm thanh cuộn ngang nếu nội dung vượt quá khung */
+}
+
+.Danhmuc button {
+    display: flex; /* Sử dụng flexbox cho nội dung bên trong button */
+    flex-direction: column; /* Sắp xếp icon và text theo cột */
+    align-items: center; /* Căn giữa nội dung theo chiều ngang */
+    justify-content: center; /* Căn giữa nội dung theo chiều dọc */
+    padding: 10px 15px; /* Thêm padding để tạo khoảng trống xung quanh nội dung */
+    margin: 5px; /* Giảm khoảng cách giữa các nút */
+    border: 1px solid #ccc; /* Thêm border để dễ nhìn */
+    background-color: #f0f0f0; /* Màu nền cho button */
+    cursor: pointer; /* Hiển thị con trỏ tay khi hover */
+    min-width: 120px; /* Đặt chiều rộng tối thiểu để các button bằng nhau */
+    box-sizing: border-box; /* Bao gồm padding và border vào chiều rộng và chiều cao */
+    border-radius: 5px; /* Bo tròn các góc của button */
+    transition: transform 0.2s, background-color 0.2s; /* Hiệu ứng khi hover */
+}
+
+.Danhmuc button:hover {
+    background-color: #e0e0e0; /* Đổi màu nền khi hover */
+    transform: scale(1.05); /* Phóng to nhẹ khi hover */
+}
+
+.Danhmuc button i, .Danhmuc button img {
+    font-size: 24px; /* Kích thước icon */
+    margin-bottom: 5px; /* Khoảng cách giữa icon và text */
+}
+
+.Danhmuc button.active {
+    background-color: #007bff; /* Màu xanh */
+    color: #ffffff; /* Màu chữ trắng */
+    border-color: #0056b3; /* Đổi màu viền */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Hiệu ứng mượt */
+}
