@@ -37,6 +37,10 @@ function transferscroll() {
     window.location.href = "index.html#item"; // Chuyển về trang chủ và thêm hash để cuộn đến phần tử
 }
 
+function transferscrollsp() {
+    window.location.href = "../index.html#item"; // Chuyển về trang chủ và thêm hash để cuộn đến phần tử
+}
+
 // Ensure this logic is added to the target page (index.html) script
 window.addEventListener('load', () => {
     const hash = window.location.hash;
