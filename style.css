@@ -232,7 +232,6 @@ a{
     color: black; /* Giữ nguyên màu chữ từ phần tử cha */
 }
 .about-body{
-    background-color: blue;
     padding:2%;
     width: 70%;
     justify-self: center;
