@@ -24,7 +24,12 @@ const products = {
     "acer-predator-neo-16": {
       name: "Laptop Acer Gaming Predator Helios Neo 16",
       images: [
-        "file/product/laptop/laptop-acer/Laptop-Acer-Gaming-Predator-Helios-Neo-16.png"
+        "file/product/laptop/laptop-acer/Laptop-Acer-Gaming-Predator-Helios-Neo-16.png",
+        "file/product/laptop/laptop-acer/Laptop-Acer-Gaming-Predator-Helios-Neo-16.png",
+        "file/product/laptop/laptop-acer/Laptop-Acer-Gaming-Predator-Helios-Neo-16-1.webp",
+        "file/product/laptop/laptop-acer/Laptop-Acer-Gaming-Predator-Helios-Neo-16-2.webp",
+        "file/product/laptop/laptop-acer/Laptop-Acer-Gaming-Predator-Helios-Neo-16-3.webp",
+        "file/product/laptop/laptop-acer/Laptop-Acer-Gaming-Predator-Helios-Neo-16-4.webp"
       ],
       specs: [
         "CPU: Intel® Core™ i7-13700HX",
@@ -39,7 +44,12 @@ const products = {
     "acer-swift-14-ai": {
       name: "Laptop ACER Swift 14 AI",
       images: [
-        "file/product/laptop/laptop-acer/Laptop-ACER-Swift-14-AI.png"
+        "file/product/laptop/laptop-acer/Laptop-ACER-Swift-14-AI.png",
+        "file/product/laptop/laptop-acer/Laptop-ACER-Swift-14-AI.png",
+        "file/product/laptop/laptop-acer/Laptop ACER Swift 14 AI-1.webp",
+        "file/product/laptop/laptop-acer/Laptop ACER Swift 14 AI-2.webp",
+        "file/product/laptop/laptop-acer/Laptop ACER Swift 14 AI-3.webp",
+        "file/product/laptop/laptop-acer/Laptop ACER Swift 14 AI-4.webp"
       ],
       specs: [
         "CPU: Intel Core Ultra 5-226V (8 nhân / 8 luồng, 3.5 GHz - 4.5 GHz)",
@@ -55,7 +65,12 @@ const products = {
     "acer-nitro-v-15-56d5": {
       name: "Laptop ACER Nitro V 15 ProPanel ANV15-51-56D5",
       images: [
-        "file/product/laptop/laptop-acer/Laptop-ACER-Nitro-V-15-ProPanel.png"
+        "file/product/laptop/laptop-acer/Laptop-ACER-Nitro-V-15-ProPanel.png",
+        "file/product/laptop/laptop-acer/Laptop-ACER-Nitro-V-15-ProPanel.png",
+        "file/product/laptop/laptop-acer/Laptop-ACER-Nitro-V-15-ProPanel-1.webp",
+        "file/product/laptop/laptop-acer/Laptop-ACER-Nitro-V-15-ProPanel-2.webp",
+        "file/product/laptop/laptop-acer/Laptop-ACER-Nitro-V-15-ProPanel-3.webp",
+        "file/product/laptop/laptop-acer/Laptop-ACER-Nitro-V-15-ProPanel-4.webp"
       ],
       specs: [
         "CPU: Intel Core i5-13420H",
@@ -70,7 +85,12 @@ const products = {
     "acer-nitro-v-15-73uu": {
       name: "Laptop Acer Nitro V 15 ProPanel ANV15-51-73UU",
       images: [
-        "file/product/laptop/laptop-acer/Laptop-Acer-Nitro-V-15-ProPanel-2.png"
+        "file/product/laptop/laptop-acer/Laptop-Acer-Nitro-V-15-ProPanel-2.png",
+        "file/product/laptop/laptop-acer/Laptop-Acer-Nitro-V-15-ProPanel-2.png",
+        "file/product/laptop/laptop-acer/Laptop-Acer-Nitro-V-15-ProPanel-2-1.webp",
+        "file/product/laptop/laptop-acer/Laptop-Acer-Nitro-V-15-ProPanel-2-2.webp",
+        "file/product/laptop/laptop-acer/Laptop-Acer-Nitro-V-15-ProPanel-2-3.webp",
+        "file/product/laptop/laptop-acer/Laptop-Acer-Nitro-V-15-ProPanel-2-4.webp"
       ],
       specs: [
         "CPU: Intel Core i7-13620H (10 nhân, 16 luồng)",
@@ -85,7 +105,12 @@ const products = {
     "acer-predator-helios-neo": {
       name: "Laptop ACER Predator Helios Neo",
       images: [
-        "file/product/laptop/laptop-acer/Laptop-ACER-Predator-Helios-Neo.png"
+        "file/product/laptop/laptop-acer/Laptop-ACER-Predator-Helios-Neo.png",
+        "file/product/laptop/laptop-acer/Laptop-ACER-Predator-Helios-Neo.png",
+        "file/product/laptop/laptop-acer/Laptop ACER Predator Helios Neo-1.webp",
+        "file/product/laptop/laptop-acer/Laptop ACER Predator Helios Neo-2.webp",
+        "file/product/laptop/laptop-acer/Laptop ACER Predator Helios Neo-3.webp",
+        "file/product/laptop/laptop-acer/Laptop ACER Predator Helios Neo-4.webp"
       ],
       specs: [
         "CPU: Intel Core i7-13700HX",
@@ -100,7 +125,12 @@ const products = {
     "asus-tuf-gaming-a15": {
       name: "Laptop ASUS TUF Gaming A15",
       images: [
-        "file/product/laptop/laptop-asus/laptop-asus-tuf-gaming-a15.png"
+        "file/product/laptop/laptop-asus/laptop-asus-tuf-gaming-a15.png",
+        "file/product/laptop/laptop-asus/laptop-asus-tuf-gaming-a15.png",
+        "file/product/laptop/laptop-asus/laptop-asus-rog-flow-z13-1.webp",
+        "file/product/laptop/laptop-asus/laptop-asus-rog-flow-z13-2.webp",
+        "file/product/laptop/laptop-asus/laptop-asus-rog-flow-z13-3.webp",
+        "file/product/laptop/laptop-asus/laptop-asus-rog-flow-z13-4.webp"
       ],
       specs: [
         "CPU: AMD Ryzen 7 7735HS",
@@ -115,7 +145,12 @@ const products = {
     "asus-gaming-k16": {
       name: "Laptop Asus Gaming K16",
       images: [
-        "file/product/laptop/laptop-asus/laptop-asus-vivobook-k16.png"
+        "file/product/laptop/laptop-asus/laptop-asus-vivobook-k16.png",
+        "file/product/laptop/laptop-asus/laptop-asus-vivobook-k16.png",
+        "file/product/laptop/laptop-asus/laptop-asus-vivobook-k16-1.webp",
+        "file/product/laptop/laptop-asus/laptop-asus-vivobook-k16-2.webp",
+        "file/product/laptop/laptop-asus/laptop-asus-vivobook-k16-3.webp",
+        "file/product/laptop/laptop-asus/laptop-asus-vivobook-k16-4.webp"
       ],
       specs: [
         "CPU: Intel Core 5 210H (2.2 GHz - 4.8 GHz)",
@@ -130,7 +165,12 @@ const products = {
     "asus-zenbook-14": {
       name: "Laptop Asus Zenbook 14",
       images: [
-        "file/product/laptop/laptop-asus/laptop-asus-zenbook-14.png"
+        "file/product/laptop/laptop-asus/laptop-asus-zenbook-14.png",
+        "file/product/laptop/laptop-asus/laptop-asus-zenbook-14.png",
+        "file/product/laptop/laptop-asus/laptop-asus-zenbook-14-1.webp",
+        "file/product/laptop/laptop-asus/laptop-asus-zenbook-14-2.webp",
+        "file/product/laptop/laptop-asus/laptop-asus-zenbook-14-3.webp",
+        "file/product/laptop/laptop-asus/laptop-asus-zenbook-14-4.webp"
       ],
       specs: [
         "CPU: Intel Core i7-1360P",
@@ -145,7 +185,12 @@ const products = {
     "asus-vivobook-14": {
       name: "Laptop Asus Vivobook 14",
       images: [
-        "file/product/laptop/laptop-asus/laptop-asus-vivobook-14.png"
+        "file/product/laptop/laptop-asus/laptop-asus-vivobook-14.png",
+        "file/product/laptop/laptop-asus/laptop-asus-vivobook-14.png",
+        "file/product/laptop/laptop-asus/laptop-asus-vivobook-14-1.webp",
+        "file/product/laptop/laptop-asus/laptop-asus-vivobook-14-2.webp",
+        "file/product/laptop/laptop-asus/laptop-asus-vivobook-14-3.webp",
+        "file/product/laptop/laptop-asus/laptop-asus-vivobook-14-4.webp"
       ],
       specs: [
         "CPU: Intel Core i3-1215U",
@@ -160,7 +205,12 @@ const products = {
     "asus-vivobook-15": {
       name: "Laptop Asus Vivobook 15",
       images: [
-        "file/product/laptop/laptop-asus/laptop-asus-vivobook-15.png"
+        "file/product/laptop/laptop-asus/laptop-asus-vivobook-15.png",
+         "file/product/laptop/laptop-asus/laptop-asus-vivobook-15.png",
+          "file/product/laptop/laptop-asus/laptop-asus-vivobook-15-1.webp",
+           "file/product/laptop/laptop-asus/laptop-asus-vivobook-15-2.webp",
+            "file/product/laptop/laptop-asus/laptop-asus-vivobook-15-3.webp",
+             "file/product/laptop/laptop-asus/laptop-asus-vivobook-15-4.webp"
       ],
       specs: [
         "CPU: Intel Core i5-1235U",
@@ -175,7 +225,12 @@ const products = {
     "asus-rog-flow-z13": {
       name: "Laptop Asus ROG Flow Z13",
       images: [
-        "file/product/laptop/laptop-asus/laptop-asus-rog-flow-z13.png"
+        "file/product/laptop/laptop-asus/laptop-asus-rog-flow-z13.png",
+        "file/product/laptop/laptop-asus/laptop-asus-rog-flow-z13.png",
+        "file/product/laptop/laptop-asus/laptop-asus-rog-flow-z13-1.png",
+        "file/product/laptop/laptop-asus/laptop-asus-rog-flow-z13-2.png",
+        "file/product/laptop/laptop-asus/laptop-asus-rog-flow-z13-3.png",
+        "file/product/laptop/laptop-asus/laptop-asus-rog-flow-z13-4.png"
       ],
       specs: [
         "CPU: Intel Core i9-13900H",
@@ -191,7 +246,12 @@ const products = {
     "msi-katana-15": {
       name: "Laptop MSI Katana 15",
       images: [
-        "file/product/laptop/laptop-msi/laptop-msi-katana-15.png"
+        "file/product/laptop/laptop-msi/laptop-msi-katana-15.png",
+        "file/product/laptop/laptop-msi/laptop-msi-katana-15.png",
+        "file/product/laptop/laptop-msi/laptop-msi-katana-15-1.webp",
+        "file/product/laptop/laptop-msi/laptop-msi-katana-15-2.webp",
+        "file/product/laptop/laptop-msi/laptop-msi-katana-15-3.webp",
+        "file/product/laptop/laptop-msi/laptop-msi-katana-15-4.webp"
       ],
       specs: [
         "CPU: Intel Core i7-13620H",
@@ -206,7 +266,12 @@ const products = {
     "msi-prestige-13-ai": {
       name: "Laptop MSI Prestige 13 AI+ Evo",
       images: [
-        "file/product/laptop/laptop-msi/laptop-msi-prestige-13-ai-evo.png"
+        "file/product/laptop/laptop-msi/laptop-msi-prestige-13-ai-evo.png",
+        "file/product/laptop/laptop-msi/laptop-msi-prestige-13-ai-evo.png",
+        "file/product/laptop/laptop-msi/laptop-msi-prestige-13-ai-evo-1.webp",
+        "file/product/laptop/laptop-msi/laptop-msi-prestige-13-ai-evo-2.webp",
+        "file/product/laptop/laptop-msi/laptop-msi-prestige-13-ai-evo-3.webp",
+        "file/product/laptop/laptop-msi/laptop-msi-prestige-13-ai-evo-4.webp"
       ],
       specs: [
         "CPU: Intel Core Ultra 7",
@@ -221,7 +286,12 @@ const products = {
     "msi-sword-16-hx": {
       name: "Laptop MSI Sword 16 HX",
       images: [
-        "file/product/laptop/laptop-msi/laptop-msi-sword-16-hx.png"
+        "file/product/laptop/laptop-msi/laptop-msi-sword-16-hx.png",
+        "file/product/laptop/laptop-msi/laptop-msi-sword-16-hx.png",
+        "file/product/laptop/laptop-msi/laptop-msi-sword-16-hx-1.webp",
+        "file/product/laptop/laptop-msi/laptop-msi-sword-16-hx-2.webp",
+        "file/product/laptop/laptop-msi/laptop-msi-sword-16-hx-3.webp",
+        "file/product/laptop/laptop-msi/laptop-msi-sword-16-hx-4.webp"
       ],
       specs: [
         "CPU: Intel Core i7-14700HX",
@@ -236,7 +306,12 @@ const products = {
     "msi-modern-14": {
       name: "Laptop MSI Modern 14",
       images: [
-        "file/product/laptop/laptop-msi/laptop-msi-modern-14.png"
+        "file/product/laptop/laptop-msi/laptop-msi-modern-14.png",
+        "file/product/laptop/laptop-msi/laptop-msi-modern-14.png",
+        "file/product/laptop/laptop-msi/laptop-msi-modern-14-1.webp",
+        "file/product/laptop/laptop-msi/laptop-msi-modern-14-2.webp",
+        "file/product/laptop/laptop-msi/laptop-msi-modern-14-3.webp",
+        "file/product/laptop/laptop-msi/laptop-msi-modern-14-4.webp"
       ],
       specs: [
         "CPU: Intel Core i5-1235U",
@@ -251,7 +326,12 @@ const products = {
     "msi-crosshair-16-hx": {
       name: "Laptop MSI Crosshair 16 HX",
       images: [
-        "file/product/laptop/laptop-msi/laptop-msi-crosshair-16-hx.png"
+        "file/product/laptop/laptop-msi/laptop-msi-crosshair-16-hx.png",
+         "file/product/laptop/laptop-msi/laptop-msi-crosshair-16-hx.png",
+          "file/product/laptop/laptop-msi/laptop-msi-crosshair-16-hx-1.webp",
+           "file/product/laptop/laptop-msi/laptop-msi-crosshair-16-hx-2.webp",
+            "file/product/laptop/laptop-msi/laptop-msi-crosshair-16-hx-3.webp",
+             "file/product/laptop/laptop-msi/laptop-msi-crosshair-16-hx-4.webp"
       ],
       specs: [
         "CPU: Intel Core i7-13700HX",
@@ -266,7 +346,12 @@ const products = {
     "msi-pulse-16-ai": {
       name: "Laptop MSI Pulse 16 AI",
       images: [
-        "file/product/laptop/laptop-msi/laptop-msi-pulse-16-ai.png"
+        "file/product/laptop/laptop-msi/laptop-msi-pulse-16-ai.png",
+        "file/product/laptop/laptop-msi/laptop-msi-pulse-16-ai.png",
+        "file/product/laptop/laptop-msi/laptop-msi-pulse-16-ai-1.webp",
+        "file/product/laptop/laptop-msi/laptop-msi-pulse-16-ai-2.webp",
+        "file/product/laptop/laptop-msi/laptop-msi-pulse-16-ai-3.webp",
+        "file/product/laptop/laptop-msi/laptop-msi-pulse-16-ai-4.webp"
       ],
       specs: [
         "CPU: Intel Core Ultra 7",

@@ -1,241 +1,220 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-
-    <link rel="stylesheet" href="style_DM.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style.css">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Thiết bị điện tử</title>
+        <link rel="stylesheet" href="style_DM.css">
+        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="../product.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <header>
+                <div class="nutdieuhuongheader">
+                    <img src="../file/icon.jpg" alt="Website Logo">
+                    <form action="../index.html">
+                        <button>Trang chủ</button>
+                    </form>
+                        <button onclick="transferscrollsp()">Sản phẩm</button>
+                    <form action="../about.html">
+                        <button>Về chúng tôi</button>
+                    </form>
+                </div>
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Laptop</title>
-</head>
-<body>
-    <header>
-        <div class="nutdieuhuongheader">
-            <img src="../file/icon.jpg" alt="Website Logo">
-            <form action="index.html">
-                <button>Trang chủ</button>
-            </form>
-            <button type="button" onclick="scrollonclick()">Sản phẩm</button>
-            <form action="about.html">
-                <button>Về chúng tôi</button>
-            </form>
-        </div>
-
-        <div class="thanhtimkiem">
-            <form action="#" method="get" id="form">
-                <input type="text" id="searchbar" name="s" placeholder="Tìm kiếm...">
-                <button class="submitbutton" type="submit">Tìm</button>
-            </form>
-        </div>
-</header>
-    
-    <main>
-        
-    <div class="Danhmuc">
-        <button><i class="fa-solid fa-laptop"></i>Laptop
-        </button>
-        <button><i class="fa-brands fa-apple"></i>Macbook
-        </button>
-        <button><i class="fa-solid fa-mobile"></i>Điện thoại
-        </button>
-        <button><i class="fa-solid fa-tablet"></i>Máy tính bảng
-        </button>
-        <button><i class="fas fa-desktop"></i>Màn hình
-        </button>
-        <button><img src="../file/pc_icon.jpg" style="max-width: 30px; max-height: 30px; height: auto; margin-bottom: 5px; display: block;">Máy tính bàn
-        </button>
-        </button>
-        <button><i class="fas fa-headphones-alt"></i>Thiết bị nghe
-        </button>
-        <button><i class="fa-solid fa-gamepad"></i></i>Các thiết bị khác
-        </button>
-    </div>
-
-    <div class="product-list">
-
-        <h1>Laptop Acer</h1>
-
-        <div class="product-container">
-        
-            <a href="laptop.html">
-                <div class="laptop">
-                    <img src="file/product/laptop/laptop-acer/Laptop-Acer-Aspire-5.png" alt="Laptop">
-                    <p>Laptop Acer Aspire 5</p>
+                <div class="thanhtimkiem">
+                    <form action="#" method="get" id="form">
+                        <input type="text" id="searchbar" name="s" placeholder="Tìm kiếm...">
+                        <button class="submitbutton" type="submit">Tìm</button>
+                    </form>
                 </div>
-            </a>
+        </header>
+        <main>
+            <div class="Danhmuc">
+                <a href="Laptop.html"><button><i class="fa-solid fa-laptop"></i>Laptop</button></a>
+                <a href="macbook.html"><button><i class="fa-brands fa-apple"></i>Macbook</button></a>
+                <a href="phone.html"><button><i class="fa-solid fa-mobile"></i>Điện thoại</button></a>
+                <a href="tablet.html"><button><i class="fa-solid fa-tablet"></i>Tablet</button></a>
+                <a href="screen.html"><button><i class="fas fa-desktop"></i>Màn hình</button></a>
+                <a href="audio.html"><button><i class="fas fa-headphones-alt"></i>Thiết bị nghe</button></a>
+            </div>
+            <div class="product-list">
 
-            <a href="laptop.html">
-                <div class="laptop">
-                    <img src="file/product/laptop/laptop-acer/Laptop-Acer-Gaming-Predator-Helios-Neo-16.png" alt="Laptop">
-                    <p>Laptop Acer Gaming Predator Helios Neo 16</p>
-                </div>
-            </a>    
-            
-            <a href="laptop.html">
-                <div class="laptop">
-                    <img src="file/product/laptop/laptop-acer/Laptop-ACER-Swift-14-AI.png" alt="Laptop">
-                    <p>Laptop ACER Swift 14 AI</p>
-                </div>
-            </a>
+                <h1>Laptop Acer</h1>
 
-            <a href="laptop.html">
-                <div class="laptop">
-                    <img src="file/product/laptop/laptop-acer/Laptop-ACER-Nitro-V-15-ProPanel.png" alt="Laptop">
-                    <p>Laptop ACER Nitro V 15 ProPanel ANV15-51-56D5</p>
+                <div class="product-container">
+                    <a href="../chitiet.html?id=acer-aspire-5">
+                        <div class="laptop">
+                            <img src="../file/product/laptop/laptop-acer/Laptop-Acer-Aspire-5.png" alt="Laptop">
+                            <p>Laptop Acer Aspire 5</p>
+                        </div>
+                    </a>
+                
+                    <a href="../chitiet.html?id=acer-predator-neo-16">
+                        <div class="laptop">
+                            <img src="../file/product/laptop/laptop-acer/Laptop-Acer-Gaming-Predator-Helios-Neo-16.png" alt="Laptop">
+                            <p>Laptop Acer Gaming Predator Helios Neo 16</p>
+                        </div>
+                    </a>    
+                
+                    <a href="../chitiet.html?id=acer-swift-14-ai">
+                        <div class="laptop">
+                            <img src="../file/product/laptop/laptop-acer/Laptop-ACER-Swift-14-AI.png" alt="Laptop">
+                            <p>Laptop ACER Swift 14 AI</p>
+                        </div>
+                    </a>
+                
+                    <a href="../chitiet.html?id=acer-nitro-v-15-56d5">
+                        <div class="laptop">
+                            <img src="../file/product/laptop/laptop-acer/Laptop-ACER-Nitro-V-15-ProPanel.png" alt="Laptop">
+                            <p>Laptop ACER Nitro V 15 ProPanel ANV15-51-56D5</p>
+                        </div>
+                    </a>
+                
+                    <a href="../chitiet.html?id=acer-nitro-v-15-73uu">
+                        <div class="laptop">
+                            <img src="../file/product/laptop/laptop-acer/Laptop-Acer-Nitro-V-15-ProPanel-2.png" alt="Laptop">
+                            <p>Laptop Acer Nitro V 15 ProPanel ANV15-51-73UU</p>
+                        </div>
+                    </a>
+                
+                    <a href="../chitiet.html?id=acer-predator-helios-neo">
+                        <div class="laptop">
+                            <img src="../file/product/laptop/laptop-acer/Laptop-ACER-Predator-Helios-Neo.png" alt="Laptop">
+                            <p>Laptop ACER Predator Helios Neo</p>
+                        </div>
+                    </a>
                 </div>
-            </a>
-
-            <a href="laptop.html">
-                <div class="laptop">
-                    <img src="file/product/laptop/laptop-acer/Laptop-Acer-Nitro-V-15-ProPanel-2.png" alt="Laptop">
-                    <p>Laptop Acer Nitro V 15 ProPanel ANV15-51-73UU</p>
+                
+                <h1>Laptop Asus</h1>
+                
+                <div class="product-container">
+                    <a href="../chitiet.html?id=asus-tuf-gaming-a15">
+                        <div class="laptop">
+                            <img src="../file/product/laptop/laptop-asus/laptop-asus-tuf-gaming-a15.png" alt="Laptop">
+                            <p>Laptop ASUS TUF Gaming A15</p>
+                        </div>
+                    </a>
+                
+                    <a href="../chitiet.html?id=asus-gaming-k16">
+                        <div class="laptop">
+                            <img src="../file/product/laptop/laptop-asus/laptop-asus-vivobook-k16.png" alt="Laptop">
+                            <p>Laptop Asus Gaming K16</p>
+                        </div>
+                    </a>  
+                
+                    <a href="../chitiet.html?id=asus-zenbook-14">
+                        <div class="laptop">
+                            <img src="../file/product/laptop/laptop-asus/laptop-asus-zenbook-14.png" alt="Laptop">
+                            <p>Laptop Asus Zenbook 14</p>
+                        </div>
+                    </a>
+                
+                    <a href="../chitiet.html?id=asus-vivobook-14">
+                        <div class="laptop">
+                            <img src="../file/product/laptop/laptop-asus/laptop-asus-vivobook-14.png" alt="Laptop">
+                            <p>Laptop Asus Vivobook 14</p>
+                        </div>
+                    </a>
+                
+                    <a href="../chitiet.html?id=asus-vivobook-15">
+                        <div class="laptop">
+                            <img src="../file/product/laptop/laptop-asus/laptop-asus-vivobook-15.png" alt="Laptop">
+                            <p>Laptop Asus Vivobook 15</p>
+                        </div>
+                    </a>
+                
+                    <a href="../chitiet.html?id=asus-rog-flow-z13">
+                        <div class="laptop">
+                            <img src="../file/product/laptop/laptop-asus/laptop-asus-rog-flow-z13.png" alt="Laptop">
+                            <p>Laptop Asus ROG Flow Z13</p>
+                        </div>
+                    </a>
                 </div>
-            </a>
-
-            <a href="laptop.html">
-                <div class="laptop">
-                    <img src="file/product/laptop/laptop-acer/Laptop-ACER-Predator-Helios-Neo.png" alt="Laptop">
-                    <p>Laptop ACER Predator Helios Neo</p>
+                
+                <h1>Laptop MSI</h1>
+                
+                <div class="product-container">
+                    <a href="../chitiet.html?id=msi-katana-15">
+                        <div class="laptop">
+                            <img src="../file/product/laptop/laptop-msi/laptop-msi-katana-15.png" alt="Laptop">
+                            <p>Laptop MSI Katana 15</p>
+                        </div>
+                    </a>
+                
+                    <a href="../chitiet.html?id=msi-prestige-13-ai">
+                        <div class="laptop">
+                            <img src="../file/product/laptop/laptop-msi/laptop-msi-prestige-13-ai-evo.png" alt="Laptop">
+                            <p>Laptop Msi Prestige 13 AI+ Evo</p>
+                        </div>
+                    </a>  
+                
+                    <a href="../chitiet.html?id=msi-sword-16-hx">
+                        <div class="laptop">
+                            <img src="../file/product/laptop/laptop-msi/laptop-msi-sword-16-hx.png" alt="Laptop">
+                            <p>Laptop Msi Sword 16 HX</p>
+                        </div>
+                    </a>
+                
+                    <a href="../chitiet.html?id=msi-modern-14">
+                        <div class="laptop">
+                            <img src="../file/product/laptop/laptop-msi/laptop-msi-modern-14.png" alt="Laptop">
+                            <p>Laptop Msi Modern 14</p>
+                        </div>
+                    </a>
+                
+                    <a href="../chitiet.html?id=msi-crosshair-16-hx">
+                        <div class="laptop">
+                            <img src="../file/product/laptop/laptop-msi/laptop-msi-crosshair-16-hx.png" alt="Laptop">
+                            <p>Laptop Msi Crosshair 16 HX</p>
+                        </div>
+                    </a>
+                
+                    <a href="../chitiet.html?id=msi-pulse-16-ai">
+                        <div class="laptop">
+                            <img src="../file/product/laptop/laptop-msi/laptop-msi-pulse-16-ai.png" alt="Laptop">
+                            <p>Laptop Msi Pulse 16 AI</p>
+                        </div>
+                    </a>
                 </div>
-            </a>
-            
-        </div>
+                
 
-        <h1>Laptop Asus</h1>
-
-        <div class="product-container">
-        
-            <a href="laptop.html">
-                <div class="laptop">
-                    <img src="file/product/laptop/laptop-asus/laptop-asus-tuf-gaming-a15.png" alt="Laptop">
-                    <p>Laptop ASUS TUF Gaming A15</p>
-                </div>
-            </a>
-
-            <a href="laptop.html">
-                <div class="laptop">
-                    <img src="file/product/laptop/laptop-asus/laptop-asus-vivobook-k16.png" alt="Laptop">
-                    <p>Laptop Asus Gaming K16</p>
-                </div>
-            </a>  
-            
-            <a href="laptop.html">
-                <div class="laptop">
-                    <img src="file/product/laptop/laptop-asus/laptop-asus-zenbook-14.png" alt="Laptop">
-                    <p>Laptop Asus Zenbook 14</p>
-                </div>
-            </a>
-
-            <a href="laptop.html">
-                <div class="laptop">
-                    <img src="file/product/laptop/laptop-asus/laptop-asus-vivobook-14.png" alt="Laptop">
-                    <p>Laptop Asus Vivobook 14</p>
-                </div>
-            </a>
-
-            <a href="laptop.html">
-                <div class="laptop">
-                    <img src="file/product/laptop/laptop-asus/laptop-asus-vivobook-15.png" alt="Laptop">
-                    <p>Laptop Asus Vivobook 15</p>
-                </div>
-            </a>
-
-            <a href="laptop.html">
-                <div class="laptop">
-                    <img src="file/product/laptop/laptop-asus/laptop-asus-rog-flow-z13.png" alt="Laptop">
-                    <p>Laptop Asus ROG Flow Z13</p>
-                </div>
-            </a>
-        
-        </div>
-
-        <h1>Laptop MSI</h1>
-
-        <div class="product-container">
-        
-            <a href="laptop.html">
-                <div class="laptop">
-                    <img src="file/product/laptop/laptop-msi/laptop-msi-katana-15.png" alt="Laptop">
-                    <p>Laptop MSI Katana 15</p>
-                </div>
-            </a>
-
-            <a href="laptop.html">
-                <div class="laptop">
-                    <img src="file/product/laptop/laptop-msi/laptop-msi-prestige-13-ai-evo.png" alt="Laptop">
-                    <p>Laptop Msi Prestige 13 AI+ Evo</p>
-                </div>
-            </a>  
-            
-            <a href="laptop.html">
-                <div class="laptop">
-                    <img src="file/product/laptop/laptop-msi/laptop-msi-sword-16-hx.png" alt="Laptop">
-                    <p>Laptop Msi Sword 16 HX</p>
-                </div>
-            </a>
-
-            <a href="laptop.html">
-                <div class="laptop">
-                    <img src="file/product/laptop/laptop-msi/laptop-msi-modern-14.png" alt="Laptop">
-                    <p>Laptop Msi Modern 14</p>
-                </div>
-            </a>
-
-            <a href="laptop.html">
-                <div class="laptop">
-                    <img src="file/product/laptop/laptop-msi/laptop-msi-crosshair-16-hx.png" alt="Laptop">
-                    <p>Laptop Msi Crosshair 16 HX</p>
-                </div>
-            </a>
-
-            <a href="laptop.html">
-                <div class="laptop">
-                    <img src="file/product/laptop/laptop-msi/laptop-msi-pulse-16-ai.png" alt="Laptop">
-                    <p>Laptop Msi Pulse 16 AI</p>
-                </div>
-            </a>
-        
-        </div>
-
-    </div>
-    </main>
-     
-</body>
-<script src="script.js"></script>
-<br>
-<footer>
-    <p style="text-align: center; font-weight: bold;">Thông tin liên lạc</p>
-    <br>
-    <div class="footer-content" style="display: flex; justify-content: space-between;">
-        <div style=
-        "
-        display: flex; 
-        flex-direction: column; 
-        align-items: left; 
-        justify-content: center;
-        ">
-        <a href="https://www.facebook.com/">
-            <i class="fa-brands fa-facebook">   Facebook</i>
-        </a>
+            </div>
+        </main>
         <br>
-        <a href="https://mail.google.com/">
-            <i class="fa-solid fa-envelope">   Gmail</i>
-        </a>
-        </div>
-        <div style="
-        flex: 1; 
-        text-align: right;
-        ">
-        <p>Demo báo cáo</p>
-        <p>Nội dung chỉ dùng để thực hiện báo cáo cuối kì</p>
-        </div>
-    </div>
-    <br>
-    <p style="text-align: center;">&copy; 2025 Thiết bị điện tử. All rights reserved.</p>
-</footer>
-</body>
-<script src="script.js" defer></script>
+        <footer>
+            <p style="text-align: center; font-weight: bold;">Thông tin liên lạc</p>
+            <br>
+            <div class="footer-content" style="display: flex; justify-content: space-between;">
+                <div style=
+                "
+                display: flex; 
+                flex-direction: column; 
+                align-items: left; 
+                justify-content: center;
+                ">
+                <a href="https://www.facebook.com/">
+                    <i class="fa-brands fa-facebook">   Facebook</i>
+                </a>
+                <br>
+                <a href="https://mail.google.com/">
+                    <i class="fa-solid fa-envelope">   Gmail</i>
+                </a>
+                </div>
+                <div style="
+                flex: 1; 
+                text-align: right;
+                ">
+                <p>Demo báo cáo</p>
+                <p>Nội dung chỉ dùng để thực hiện báo cáo cuối kì</p>
+                </div>
+            </div>
+            <br>
+            <p style="text-align: center;">&copy; 2025 Thiết bị điện tử. All rights reserved.</p>
+        </footer>
+    </body>
 
-</html>
+    <script src="../script.js" defer></script>
+    <script src="buttonColorChanger.js" defer></script>
+    
+    </html>

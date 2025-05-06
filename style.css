@@ -100,13 +100,22 @@ header button:hover {
     align-items: center;
     box-shadow: 3px 3px 5px rgba(51, 51, 51, 0.5);
 }
-.banner p{
-    font-size: 2rem;
-    margin-left: 70px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    text-align: center;
+.banner-title {
+    font-size: 50px; /* Kích thước chữ lớn hơn */
+    font-weight: bold; /* Chữ đậm */
+    color: #1a1a3d; /* Màu chữ xanh đậm */
+    text-align: center; /* Canh giữa */
+    font-family: 'Arial', sans-serif; /* Kiểu chữ đơn giản */
 }
+
+.banner-description {
+    font-size: 20px; /* Kích thước chữ nhỏ hơn */
+    color: #5a5a89; /* Màu chữ xám nhạt */
+    text-align: center; /* Canh giữa */
+    font-family: 'Arial', sans-serif; /* Kiểu chữ đơn giản */
+    margin-top: 10px; /* Khoảng cách trên */
+}
+
 .banner img{
     position:relative;
     width:85%;
@@ -239,51 +248,102 @@ a{
     box-shadow: 3px 3px 5px rgba(51, 51, 51, 0.5);
 }
 .product-detail-page {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 40px 5%;
+    display: flex; /* Hiển thị các phần tử con theo chiều ngang */
+    flex-wrap: wrap; /* Cho phép các phần tử con xuống hàng nếu không đủ chỗ */
+    gap: 50px; /* Khoảng cách giữa các phần tử con */
+    justify-content: center; /* Căn giữa các phần tử con theo chiều ngang */
+    align-items: flex-start; /* Căn phần tử con theo đỉnh của khối */
+    padding: 60px 5%; /* Padding trên/dưới 60px, trái/phải 5% */
+    background-color: #f4f6f8; /* Màu nền nhẹ cho toàn bộ khối */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Font chữ hiện đại, dễ đọc */
 }
-  
+
+
 .product-image-gallery {
-    flex: 1 1 40%;
-    max-width: 500px;
+    flex: 1 1 40%; /* Ưu tiên chiếm 40% không gian, có thể co giãn */
+    max-width: 500px; /* Giới hạn chiều rộng tối đa */
+    background-image: linear-gradient(110deg, rgba(205,209,255,1) 0%, rgba(201,231,250,1) 48%, rgba(183,255,243,1) 100%);
+    border-radius: 12px; /* Bo tròn góc */
+    padding: 20px; /* Khoảng cách bên trong khối */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05); /* Đổ bóng nhẹ */
+    transition: transform 0.3s ease; /* Tạo hiệu ứng chuyển động mượt khi hover */
 }
-  
-  .product-details {
-    flex: 1 1 50%;
-    max-width: 600px;
-  }
-  
-  .main-image {
+.product-image-gallery:hover {
+    transform: translateY(-5px); /* Khi hover thì nổi lên nhẹ */
+}
+
+
+.main-image {
     width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    max-height: 400px; /* Giới hạn chiều cao để không vỡ layout */
+    object-fit: contain; /* Hiển thị đầy đủ ảnh không bị crop */
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin: 0 auto;
   }
   
-  .thumbnail-gallery {
-    margin-top: 10px;
+
+
+.thumbnail-gallery {
+    margin-top: 15px; /* Cách ảnh lớn bên trên 15px */
     display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-  }
-  
-  .thumbnail-gallery img {
-    width: 70px;
-    height: 70px;
-    object-fit: cover;
-    border-radius: 8px;
-    cursor: pointer;
-    border: 2px solid transparent;
-    transition: border 0.2s ease;
-  }
-  
-  .thumbnail-gallery img:hover {
-    border: 2px solid #39158F;
-  }
-  
+    gap: 12px; /* Khoảng cách giữa các ảnh nhỏ */
+    flex-wrap: wrap; /* Cho ảnh nhỏ tự xuống dòng nếu không đủ chỗ */
+    justify-content: center; /* Căn giữa ảnh nhỏ */
+}
+
+.thumbnail-gallery img {
+    width: 70px; height: 70px; /* Kích thước vuông */
+    object-fit: cover; /* Ảnh được cắt gọn vừa khít khung mà không méo */
+    border-radius: 10px; /* Bo tròn ảnh */
+    cursor: pointer; /* Đổi chuột thành dạng "tay" khi di chuột vào */
+    border: 2px solid transparent; /* Ban đầu không có viền nổi bật */
+    transition: transform 0.3s, border 0.3s; /* Tạo hiệu ứng khi hover */
+}
+.thumbnail-gallery img:hover {
+    border: 2px solid #2cff61; /* Khi hover, viền chuyển sang màu tím */
+    transform: scale(1.05); /* Phóng to nhẹ */
+}
+
+
+/* Vùng thông tin sản phẩm */
+.product-details {
+    flex: 1 1 50%; /* Ưu tiên chiếm 50% chiều ngang */
+    max-width: 600px;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 30px 25px;
+box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05); /* Đổ bóng khối thông tin */
+    transition: transform 0.3s ease;
+}
+.product-details:hover {
+    transform: translateY(-5px); /* Hover thì khối nổi lên nhẹ */
+}
+
+.product-details h2 {
+    font-size: 28px; /* Cỡ chữ lớn cho tiêu đề */
+    margin-bottom: 20px; /* Cách đoạn dưới một khoảng */
+    color: #333; /* Màu chữ xám đậm */
+}
+
+.product-details ul {
+    list-style: none; /* Xoá dấu chấm đầu dòng */
+    padding: 0;
+    margin: 0;
+}
+
+.product-details li {
+    margin-bottom: 10px; /* Khoảng cách giữa các dòng thông tin */
+    font-size: 16px;
+    color: #444; /* Màu chữ tối */
+    line-height: 1.6; /* Dãn dòng giúp dễ đọc */
+    border-left: 4px solid #2cff56; /* Vạch tím bên trái */
+    padding-left: 10px;
+    background-color: #f9f9f9; /* Nền nhạt cho từng dòng */
+    border-radius: 4px; /* Bo nhẹ góc từng dòng */
+}
   .specifications {
     list-style: none;
     padding-left: 0;

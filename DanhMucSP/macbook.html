@@ -4,33 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thiết bị điện tử</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="style_DM.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../product.css">
+    <script src="buttonColorChanger.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
-            <div class="nutdieuhuongheader">
-                <img src="file/icon.jpg" alt="Website Logo">
-                <form action="index.html">
-                    <button>Trang chủ</button>
-                </form>
-                <form action="product.html">
-                    <button>Sản phẩm</button>
-                </form>
-                <form action="about.html">
-                    <button>Về chúng tôi</button>
-                </form>
-            </div>
- 
-            <div class="thanhtimkiem">
-                <form action="#" method="get" id="form">
-                    <input type="text" id="searchbar" name="s" placeholder="Tìm kiếm...">
-                    <button class="submitbutton" type="submit">Tìm</button>
-                </form>
-            </div>
+        <div class="nutdieuhuongheader">
+            <img src="../file/icon.jpg" alt="Website Logo">
+            <form action="../index.html">
+                <button>Trang chủ</button>
+            </form>
+            <button type="button" onclick="transferscrollsp()">Sản phẩm</button>
+            <form action="../about.html">
+                <button>Về chúng tôi</button>
+            </form>
+        </div>
+    
+        <div class="thanhtimkiem">
+            <form action="#" method="get" id="form">
+                <input type="text" id="searchbar" name="s" placeholder="Tìm kiếm...">
+                <button class="submitbutton" type="submit">Tìm</button>
+            </form>
+        </div>
     </header>
     <main>
+        <div class="Danhmuc">
+            <a href="Laptop.html"><button><i class="fa-solid fa-laptop"></i>Laptop</button></a>
+            <a href="macbook.html"><button><i class="fa-brands fa-apple"></i>Macbook</button></a>
+            <a href="phone.html"><button><i class="fa-solid fa-mobile"></i>Điện thoại</button></a>
+            <a href="tablet.html"><button><i class="fa-solid fa-tablet"></i>Tablet</button></a>
+            <a href="screen.html"><button><i class="fas fa-desktop"></i>Màn hình</button></a>
+            <a href="audio.html"><button><i class="fas fa-headphones-alt"></i>Thiết bị nghe</button></a>
+        </div>
         <div class="product-list">
 
             <h1>Macbook Air</h1>
@@ -39,21 +47,21 @@
 
                 <a href>
                     <div class="macbook">
-                        <img src="file/product/macbook/macbook-air-m1.png" alt="Macbook">
+                        <img src="../file/product/macbook/macbook-air-m1.png" alt="Macbook">
                         <p>Apple MacBook Air M1</p>
                     </div>
                 </a>
 
                 <a href>
                     <div class="macbook">
-                        <img src="file/product/macbook/macbook-air-m2.png" alt="Macbook">
+                        <img src="../file/product/macbook/macbook-air-m2.png" alt="Macbook">
                         <p>Apple MacBook Air M2</p>
                     </div>
                 </a>
 
                 <a href>
                     <div class="macbook">
-                        <img src="file/product/macbook/macbook-air-m3.png" alt="Macbook">
+                        <img src="../file/product/macbook/macbook-air-m3.png" alt="Macbook">
                         <p>Apple MacBook Air M3</p>
                     </div>
                 </a>
@@ -66,21 +74,21 @@
             
                 <a href>
                     <div class="macbook">
-                        <img src="file/product/macbook/macbook-pro-m1.png" alt="Macbook">
+                        <img src="../file/product/macbook/macbook-pro-m1.png" alt="Macbook">
                         <p>Apple MacBook Pro M1</p>
                     </div>
                 </a>
 
                 <a href>
                     <div class="macbook">
-                        <img src="file/product/macbook/macbook-pro-m2.png" alt="Macbook">
+                        <img src="../file/product/macbook/macbook-pro-m2.png" alt="Macbook">
                         <p>Apple MacBook Pro M2</p>
                     </div>
                 </a>
                 
                 <a href>
                     <div class="macbook">
-                        <img src="file/product/macbook/macbook-pro-m4.png" alt="Macbook">
+                        <img src="../file/product/macbook/macbook-pro-m4.png" alt="Macbook">
                         <p>Apple MacBook Pro M4</p>
                     </div>
                 </a>
@@ -121,6 +129,7 @@
         <p style="text-align: center;">&copy; 2025 Thiết bị điện tử. All rights reserved.</p>
     </footer>
 </body>
-<script src="script.js" defer></script>
+<script src="buttonColorChanger.js" defer></script>
+<script src="../script.js" defer></script>
    
 </html>
