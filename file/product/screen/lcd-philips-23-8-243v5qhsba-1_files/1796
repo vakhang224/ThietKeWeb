@@ -1,0 +1,1 @@
+if(location.href.includes("thankyou")&&Bizweb.checkout.subtotal_price){var price=Bizweb.checkout.subtotal_price,currency=Bizweb.checkout.currency,orderId=Bizweb.checkout.order_id;function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("event","conversion",{send_to:"",value:price,currency:currency,transaction_id:orderId})}
