@@ -1,0 +1,27 @@
+var state = document.createElement("div");state.setAttribute("class", "zalo-chat-widget");state.setAttribute("data-oaid", "3341544016880231298");state.setAttribute("data-welcome-message", "DƯƠNG LONG XIN CHÀO!");state.setAttribute("data-autopopup", 0);var body = document.getElementsByTagName("body")[0];
+body.appendChild(state);
+(function (d, s, id) {
+    var script = getUrlScript("https://sp.zalo.me/plugins/sdk.js");
+    if(script) {
+        if(ZaloSocialSDK) {
+            ZaloSocialSDK.reload();
+        }
+        return;
+    }else{
+         var zjs = d.getElementsByTagName(s)[0]; 
+        js = d.createElement(s); js.id = id;
+        js.src = "https://sp.zalo.me/plugins/sdk.js";
+        zjs.parentNode.insertBefore(js, zjs);
+    }
+}(document, 'script', 'zalo-jssdk'));
+
+
+function getUrlScript(script_name) {
+    var scripts = document.getElementsByTagName("script");
+    for (var i = 0; i < scripts.length; i++) {
+        if (scripts[i].src.indexOf(script_name) > -1) {
+            return scripts[i].src
+        }
+    }
+    return null;
+}
